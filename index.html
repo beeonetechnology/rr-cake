@@ -92,7 +92,7 @@
     <!-- Hero Section Begin -->
     <section class="hero">
         <div class="hero__slider owl-carousel">
-            <div class="hero__item set-bg" data-setbg="img/hero-1.jpeg">
+            <div class="hero__item set-bg" data-setbg="img/hero/hero-2.jpg">
                 <div class="container">
                     <div class="row d-flex justify-content-center">
                         <div class="col-lg-8">
@@ -126,50 +126,69 @@
     </section>
     <!-- Hero Section End -->
 
-    <!-- About Section Begin -->
-    <section class="about spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div class="about__text">
-                        <div class="section-title">
-                            <span>About Us</span>
-                            <h2>Baked with Love, Shared with Joy"</h2>
-                        </div>
-                        <p>we bake joy into every slice.
-                            From classic flavors to custom creations, our cakes are made with love and the finest ingredients.
-                            Whether it's a birthday, wedding, or just because—there’s always a reason to celebrate with us.</p>
+<!-- About Section Begin -->
+<section class="about spad">
+    <style>
+        @keyframes fillAnim {
+            from {
+                width: 0%;
+            }
+            to {
+                width: var(--fill-width, 100%);
+            }
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+            <!-- Text Content -->
+            <div class="col-lg-6 col-md-6">
+                <div class="about__text">
+                    <div class="section-title">
+                        <span>About Us</span>
+                        <h2>Baked with Love, Shared with Joy"</h2>
                     </div>
+                    <p>We bake joy into every slice.
+                        From classic flavors to custom creations, our cakes are made with love and the finest ingredients.
+                        Whether it's a birthday, wedding, or just because—there’s always a reason to celebrate with us.</p>
                 </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="about__bar">
-                        <div class="about__bar__item">
-                            <p>Cake design</p>
-                            <div id="bar1" class="barfiller">
-                                <div class="tipWrap"><span class="tip"></span></div>
-                                <span class="fill" data-percentage="95"></span>
-                            </div>
+            </div>
+
+            <!-- Animated Bars -->
+            <div class="col-lg-6 col-md-6">
+                <div class="about__bar">
+                    <div class="about__bar__item">
+                        <p>Cake design</p>
+                        <div id="bar1" class="barfiller" style="background-color:#eee; height:10px; border-radius:5px; overflow:hidden;">
+                            <div class="tipWrap"><span class="tip"></span></div>
+                            <span class="fill" data-percentage="95"
+                                style="--fill-width:95%; display:block; height:100%; background-color:#f39c12; animation: fillAnim 3s ease-in-out infinite alternate;"></span>
                         </div>
-                        <div class="about__bar__item">
-                            <p>Cake Class</p>
-                            <div id="bar2" class="barfiller">
-                                <div class="tipWrap"><span class="tip"></span></div>
-                                <span class="fill" data-percentage="80"></span>
-                            </div>
+                    </div>
+
+                    <div class="about__bar__item">
+                        <p>Cake Class</p>
+                        <div id="bar2" class="barfiller" style="background-color:#eee; height:10px; border-radius:5px; overflow:hidden;">
+                            <div class="tipWrap"><span class="tip"></span></div>
+                            <span class="fill" data-percentage="80"
+                                style="--fill-width:80%; display:block; height:100%; background-color:#f39c12; animation: fillAnim 3s ease-in-out infinite alternate;"></span>
                         </div>
-                        <div class="about__bar__item">
-                            <p>Cake Recipes</p>
-                            <div id="bar3" class="barfiller">
-                                <div class="tipWrap"><span class="tip"></span></div>
-                                <span class="fill" data-percentage="90"></span>
-                            </div>
+                    </div>
+
+                    <div class="about__bar__item">
+                        <p>Cake Recipes</p>
+                        <div id="bar3" class="barfiller" style="background-color:#eee; height:10px; border-radius:5px; overflow:hidden;">
+                            <div class="tipWrap"><span class="tip"></span></div>
+                            <span class="fill" data-percentage="90"
+                                style="--fill-width:90%; display:block; height:100%; background-color:#f39c12; animation: fillAnim 3s ease-in-out infinite alternate;"></span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- About Section End -->
+    </div>
+</section>
+<!-- About Section End -->
+
 
     <!-- Categories Section Begin -->
     <div class="categories">
@@ -231,9 +250,9 @@
                         </div>
                         <div class="product__item__text">
                             <h6><a href="#">Black Forest</a></h6>
-                            <div class="product__item__price">680.00</div>
+                            <div class="product__item__price">680/1kg  500/750g  350/500g</div>
                             <div class="cart_add">
-                                <a href="#">Add to cart</a>
+                                <a href="./contact.html">Add to cart</a>
                             </div>
                         </div>
                     </div>
@@ -247,9 +266,9 @@
                         </div>
                         <div class="product__item__text">
                             <h6><a href="#">White Forest</a></h6>
-                            <div class="product__item__price">680.00</div>
+                            <div class="product__item__price">680/ 1kg  500/750g  350/500g</div>
                             <div class="cart_add">
-                                <a href="#">Add to cart</a>
+                                <a href="./contact.html">Add to cart</a>
                             </div>
                         </div>
                     </div>
@@ -263,9 +282,9 @@
                         </div>
                         <div class="product__item__text">
                             <h6><a href="#">Vanila</a></h6>
-                            <div class="product__item__price">700.00</div>
+                            <div class="product__item__price">700/1kg  530/750g  350/500g</div>
                             <div class="cart_add">
-                                <a href="#">Add to cart</a>
+                                <a href="./contact.html">Add to cart</a>
                             </div>
                         </div>
                     </div>
@@ -279,9 +298,9 @@
                         </div>
                         <div class="product__item__text">
                             <h6><a href="#">Blueberry</a></h6>
-                            <div class="product__item__price">800.00</div>
+                            <div class="product__item__price">800/1kg  600/750g  420/500g</div>
                             <div class="cart_add">
-                                <a href="#">Add to cart</a>
+                                <a href="./contact.html">Add to cart</a>
                             </div>
                         </div>
                     </div>
@@ -295,9 +314,9 @@
                         </div>
                         <div class="product__item__text">
                             <h6><a href="#">White Vancho</a></h6>
-                            <div class="product__item__price">850.00</div>
+                            <div class="product__item__price">850/1kg  650/750g 450/500g</div>
                             <div class="cart_add">
-                                <a href="#">Add to cart</a>
+                                <a href="./contact.html">Add to cart</a>
                             </div>
                         </div>
                     </div>
@@ -311,9 +330,9 @@
                         </div>
                         <div class="product__item__text">
                             <h6><a href="#">Red velvet</a></h6>
-                            <div class="product__item__price">800.00</div>
+                            <div class="product__item__price">800/1kg 600/750g 400/500g</div>
                             <div class="cart_add">
-                                <a href="#">Add to cart</a>
+                                <a href="./contact.html">Add to cart</a>
                             </div>
                         </div>
                     </div>
@@ -327,9 +346,9 @@
                         </div>
                         <div class="product__item__text">
                             <h6><a href="#">Butterscotch</a></h6>
-                            <div class="product__item__price">800.00</div>
+                            <div class="product__item__price">800/1kg  600/750g  400/500g</div>
                             <div class="cart_add">
-                                <a href="#">Add to cart</a>
+                                <a href="./contact.html">Add to cart</a>
                             </div>
                         </div>
                     </div>
@@ -343,9 +362,9 @@
                         </div>
                         <div class="product__item__text">
                             <h6><a href="#">Rainbow cake</a></h6>
-                            <div class="product__item__price">1000.00</div>
+                            <div class="product__item__price">1000/1kg</div>
                             <div class="cart_add">
-                                <a href="#">Add to cart</a>
+                                <a href="./contact.html">Add to cart</a>
                             </div>
                         </div>
                     </div>
@@ -693,7 +712,7 @@
                         <ul>
                             <li>Palath ,Aduvarakkal Thazham</li>
                             <li>@rrcakeandsweets.com</li>
-                            <li>9446943366,9072733366</li>
+                            <li>9446943366</li>
                         </ul>
                     </div>
                 </div>
